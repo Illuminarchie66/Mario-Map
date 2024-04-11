@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blank Leaflet Map with SVG Overlay</title>
+    <!-- Include Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <object type="image/svg+xml" data="mapit2.svg" id="svgObject"></object>
+    <style>
+        /* Style the map container with a background color */
+        #map {
+            width: 600px;
+            height: 400px;
+            background-color: #38afcd; /* Set the desired background color */
+        }
+    </style>
+</head>
+<body>
+    <!-- Create a div element with an id for the map to be rendered into -->
+    <div id="map" style="width: 1440px; height: 810px;"></div>
+
+    <!-- Include Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+
+    <script src="https://unpkg.com/leaflet-minimap/dist/Control.MiniMap.min.js"></script>
+
+    <script>
+        // Initialize the map
+        var map = L.map('map', {
+            zoomDelta: 0.5
+        }).setView([0, 0], 5); // Set initial view (lat, lng), zoom level
+
+        // Create an SVG element
+        var svgElementBounds = [[-720, -480], [720, 480]]; // Set bounds as [[lat1, lng1], [lat2, lng2]] or [[y1, x1], [y2, x2]]
+        var svgObject = document.getElementById('svgObject');
+        // Add the SVG overlay to the map
+        L.svgOverlay(svgObject, svgElementBounds).addTo(map);
+
+        map.setMaxBounds([
+            [-720, -480],
+            [720, 480]
+        ]);
+
+        map.setMaxZoom(10); // Set maximum zoom level to 15
+        map.setMinZoom(3); // Set minimum zoom level to 5
+
+        L.marker([0, 0]).addTo(map)
+            .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+            .openPopup();
+
+        var minimap = new L.Control.MiniMap(
+            L.tileLayer('mapit2.png'), // Pass the tile layer to be used in the minimap
+            { 
+                toggleDisplay: true, 
+                width:150, 
+                height:225, 
+                bounds: map.getBounds() 
+            }// Add an option to toggle the minimap display
+        );
+
+        // Add the minimap to the main map
+        minimap.addTo(map);
+
+    </script>
+</body>
+</html>
