@@ -54,15 +54,15 @@
             .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
             .openPopup();
 
-        var minimap = new L.Control.MiniMap(
-            L.tileLayer('mapit2.png'), // Pass the tile layer to be used in the minimap
-            { 
-                toggleDisplay: true, 
-                width:150, 
-                height:225, 
-                bounds: map.getBounds() 
-            }// Add an option to toggle the minimap display
-        );
+        // var minimap = new L.Control.MiniMap(
+        //     L.tileLayer('mapit2.png'), // Pass the tile layer to be used in the minimap
+        //     { 
+        //         toggleDisplay: true, 
+        //         width:150, 
+        //         height:225, 
+        //         bounds: map.getBounds() 
+        //     }// Add an option to toggle the minimap display
+        // );
 
         // Add the minimap to the main map
         minimap.addTo(map);
