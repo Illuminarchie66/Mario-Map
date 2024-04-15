@@ -9,86 +9,15 @@
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
         crossorigin=""/>
     <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <object type="image/svg+xml" data="mapit4.svg" id="svgObject"></object>
-    <style>
-        @font-face {
-            font-family: 'papermario'; /* Name of the font */
-            src: url('FOT-PopJoyStd-B.otf'); /* Path to the font file */
-            /* You can also include other font formats for better cross-browser compatibility */
-        }
-        /* Style the map container with a background color */
-        #map {
-            width: 600px;
-            height: 400px;
-            background-color: #38afcd; /* Set the desired background color */
-        }
-
-        .custom-popup .leaflet-popup-content {
-            border-radius: 10px;
-            margin: 0 0 0 0;
-        }
-
-        .custom-popup .leaflet-popup-content-wrapper {
-        background:white;
-        border-radius: 10px;
-        padding: 0 0 0 0; /*Deleted top and bottom white sides!*/
-        width: 300px;
-        }
-
-        .custom-popup .leaflet-popup-content-wrapper a {
-            color:rgba(255,255,255,0.5);
-        }
-
-        .custom-popup .leaflet-container a.leaflet-popup-close-button {
-            color:white;
-        }
-
-        .image-container {
-            overflow: hidden; /* Crop overflow content */
-            border-top-left-radius: 10px; /* Rounded top-left corner */
-            border-top-right-radius: 10px; /* Rounded top-right corner */
-            margin: 0;
-            position: relative;
-            width: 300px; /* Adjust width as needed */
-            height: auto;
-        }
-
-        /* Overlay for the fade effect */
-        .fade-overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 50%; /* Adjust height for the fade effect */
-            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); /* Fade from transparent to opaque white */
-        }
-
-        /* Define styles for the image within the container */
-        .image-container img {
-            width: 100%;
-            height: auto;
-        }
-
-        .text-container {
-            margin: 5px 5px 5px 5px;
-            top: -50px;
-            bottom:5px;
-        }
-
-        .title-text {
-            font-size: 15px;
-            font-family: 'papermario';
-            bottom: -5px;
-        }
-
-        .info-text {
-            font-size: 13px;
-            font-family: 'papermario';
-        }
-
-    </style>
+    <script>
+        // Preload SVG image
+        var image = new Image();
+        image.src = 'mapit4.svg';
+    </script>
+    <link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
 </head>
 <body>
+    <object type="image/svg+xml" data="mapit4.svg" id="svgObject"></object>
     <!-- Create a div element with an id for the map to be rendered into -->
     <div class='custom-popup' id="map" style="width: 1440px; height: 810px;"></div>
 
@@ -104,7 +33,6 @@
         // Initialize the map
         var map = L.map('map', {
             zoomDelta: 0.5,
-            renderer: L.canvas(),
             renderer: L.canvas(),
             doubleClickZoom: false
         }).setView([0, 0], 5); // Set initial view (lat, lng), zoom level
