@@ -122,43 +122,55 @@
         map.setMaxZoom(10); // Set maximum zoom level to 15
         map.setMinZoom(2); // Set minimum zoom level to 5
 
-        var redIcon = L.icon({
-            iconUrl: 'icon.svg', // URL of the icon image
-            shadowUrl: 'marker-shadow.svg',
-            iconSize: [38, 95], // Size of the icon
-            shadowSize:   [50, 64], // size of the shadow
-            iconAnchor: [20, 94], // Anchor point of the icon (tip of the marker)
-            shadowAnchor: [17, 72],
-            popupAnchor: [-1.5, -82] // Popup anchor relative to the icon
-        });
+        function createCustomMarker(latitude, longitude, popupContent) {
+            var redIcon = L.icon({
+                iconUrl: 'icon.png', // URL of the icon image
+                shadowUrl: 'marker-shadow.svg',
+                iconSize: [50.25, 81], // Size of the icon
+                shadowSize: [75, 96], // size of the shadow
+                iconAnchor: [25.125, 81], // Anchor point of the icon (tip of the marker)
+                shadowAnchor: [21, 88],
+                popupAnchor: [0, -85] // Popup anchor relative to the icon
+            });
 
-        marker = L.marker([-20, 60.05], {icon: redIcon}).addTo(map)
-        
-        var popupContent = `
-            <div class="popup-container">
-                <div class="image-container">
-                    <img src="MarioCircuit_MKWii.webp" alt="Image">
-                    <div class="fade-overlay"></div>
-                </div>
-                <div class="text-container">
-                    <div class="title-text">Greater Castle Town</div>
-                    <div class="info-text">
-                        From: Mario Kart Wii, Mario Circuit <br> <br>
-                        This is the cute castle town which you race around in front of Peach's castle. 
-                    </div> 
-                </div>
-            </div>
-        `;
+            var marker = L.marker([latitude, longitude], { icon: redIcon, riseOnHover: false}).addTo(map);
 
-        var customOptions =
-        {
-        'className' : 'popupCustom'
+            var popupContentHTML = `
+                <div class="popup-container">
+                    <div class="image-container">
+                        <img src="images/${popupContent.imageSrc}" alt="Image">
+                        <div class="fade-overlay"></div>
+                    </div>
+                    <div class="text-container">
+                        <div class="title-text">${popupContent.title}</div>
+                        <div class="info-text">
+                            From: ${popupContent.from} <br> <br>
+                            ${popupContent.description}
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            var customOptions = {
+                'className': 'popupCustom'
+            };
+
+            marker.bindPopup(popupContentHTML, customOptions);
         }
-        marker.bindPopup(popupContent, customOptions);
 
+        createCustomMarker(-20, 60.05, {
+            imageSrc: 'MarioCircuit_MKWii.webp',
+            title: 'Greater Castle Town',
+            from: 'Mario Kart Wii, Mario Circuit',
+            description: "This is the cute castle town which you race around in front of Peach's castle."
+        });
+        createCustomMarker(-3.5, 70.05, {
+            imageSrc: 'MK_MarioRPG.jpg',
+            title: 'Castle Town',
+            from: 'Super Mario RPG, Mushroom Kingdom',
+            description: "This is the original Toad Town found in front of Peach's castle."
+        })
         
-
-
         var minimap = new L.Control.MiniMap(
             L.tileLayer('mapit2.png'), // Pass the tile layer to be used in the minimap
             { 
