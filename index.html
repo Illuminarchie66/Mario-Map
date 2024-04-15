@@ -108,10 +108,14 @@
             doubleClickZoom: false
         }).setView([0, 0], 5); // Set initial view (lat, lng), zoom level
 
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        }).addTo(map);
+        var imageUrl = 'mapit2.png',
+            imageBounds = [[0,0], [12399, 15000]]; // Replace lat1, lng1, lat2, lng2 with your actual coordinates
+        
+        // Create the image overlay
+        var imageOverlay = L.imageOverlay(imageUrl, imageBounds);
+        
+        // Add the image overlay to your map
+        imageOverlay.addTo(map);
 
         // Create an SVG element
         // var svgElementBounds = [[-720, -480], [720, 480]]; // Set bounds as [[lat1, lng1], [lat2, lng2]] or [[y1, x1], [y2, x2]]
