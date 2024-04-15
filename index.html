@@ -105,10 +105,11 @@
         var map = L.map('map', {
             zoomDelta: 0.5,
             renderer: L.canvas(),
+            renderer: L.canvas(),
             doubleClickZoom: false
         }).setView([0, 0], 5); // Set initial view (lat, lng), zoom level
 
-        // Create an SVG element
+        Create an SVG element
         var svgElementBounds = [[-720, -480], [720, 480]]; // Set bounds as [[lat1, lng1], [lat2, lng2]] or [[y1, x1], [y2, x2]]
         var svgObject = document.getElementById('svgObject');
         // Add the SVG overlay to the map
