@@ -16,7 +16,7 @@ x,y,icon,name,game,course,description,src,tag
 73.6,-80.25,flower,Tail Tree,Super Mario 3D Land,,"A special tree that bears Super Leaves on its branches, granting Tanooki powers.",3DLTree.webp,location
 91.53,-84.56,red,Odyssey Hill,Super Mario Odyssey ,Mushroom Kingdom,"A hillside where a beautiful fountain resides, surrounded by flowers. ",MOFountain.png,area
 84.24,-90.4,flower,Mini Star Telescope,Mario Party 9,,"A large telescope on a stargazing hill, where Mario and his friends go to watch the Mini Stars. ",MP9Telescope.png,location
-82.17,-90.38,star,Rosalina's Hill,Super Mario Galaxy,Rosalina's Storybook ,"A grassy hill dotted with flowers with a large tree, where Rosalina went to go stargazing.",MGStorybook.webp,area
+82.17,-90.38,star,Rosalina's Hill,Super Mario Galaxy,Rosalina's Storybook ,"A grassy hill dotted with flowers with a large tree, where Rosalina went to go stargazing.",MGStorybook.webp,landmark
 81.5,-84.83,red,Castle Town,Super Mario Galaxy,,"A small castle town, where the Toads are found celebrating the star festival.",MGTown.webp,area
 70.8,-66.7,red,Odyssey Well,Super Mario Odyssey,Mushroom Kingdom,A small well that leads to a difficult 2D section with a moon at the end.,MOWell.jpg,area
 89.75,-71.8,red,Hedge Garden,Super Mario Odyssey,Mushroom Kingdom,A series of hedge bshes tended to by a Toad. ,MOHedge.webp,area
@@ -116,7 +116,7 @@ x,y,icon,name,game,course,description,src,tag
 77.68,-119.75,red,Toad Town Docks,Paper Mario 64,,"The docks in the South of Toad Town, where Mario is taken by a Whale to Lavalava Island.",PMHarbour.png,area
 78,-118.5,flower,Club 64,Paper Mario 64,Toad Town Docks,"A club along the docks,doubling as a cafe and a restaurant. The bartender 'plays a mean guitar'.",PMClub64.webp,location
 81,-118.55,flower,Crazy Cap,Super Mario Odyssey,,A franchise of clothes and cap shops which has recently opened in the Mushroom Kingdom.,SMOCap.png,location
-79,-116.75,flower,Mario Motors,Super Nintendo World,,A gift shop selling merchandise surrounding Mario's karting adventures.,IRLMotor.jpg,noncanon
+79,-116.75,flower,Mario Motors,Super Nintendo World,,A gift shop selling merchandise surrounding Mario's karting adventures.,IRLMotor.jpg,location
 81.64,-115.1,flower,Shy Guy's Toy Box,Paper Mario 64,Southern Toad Town,"An empty building housing Shy Guy's Toy Box. It seems to be a playroom for Shy Guys, answering to no one here.",PMShy.webp,location
 84.1,-114.6,flower,Harry's Shop,Paper Mario 64,Southern Toad Town,"A shop run by Harry in the Residential Area. He buys, sells and checks items. If Mario helps him, he is allowed to take anything he likes from Harry's store room.",PMHarry.webp,location
 86.8,-115.03,flower,Tayce T.'s Kitchen,Paper Mario 64,Southern Toad Town,Home of the best cook around. Here Mario can give Tayce T ingredients and she will make him dishes to aid on his adventure.,PMTayce.webp,location
@@ -137,7 +137,7 @@ x,y,icon,name,game,course,description,src,tag
 84.6,-103.5,flower,Dojo,Paper Mario 64,Toad Town Plaza,"Here Mario can train and hone his skills against Chan, Lee and the Toad martial artist, The Master.",PMDojo.webp,location
 84.15,-104.075,flower,Shroom Grocery,Paper Mario 64,Toad Town Plaza,"A quaint shop which sells various power-ups, such as Mushrooms, Fire Flowers, POW Blocks, etc.",PMShroom.webp,location
 82.9,-103.15,flower,Russ T.'s House,Paper Mario 64,Toad Town Plaza,The home of the wise Toad Russ T. He can teach Mario useful information about battle or about legends.,PMRuss.png,location
-82.68,-104.23,red,Toad Town Plaza,Paper Mario 64,,"The central hub of Toad Town. Outside of Peach's Castle, this is where the town is busiest.",PMPlaza.webp,location
+82.68,-104.23,red,Toad Town Plaza,Paper Mario 64,,"The central hub of Toad Town. Outside of Peach's Castle, this is where the town is busiest.",PMPlaza.webp,area
 76,-105.1,red,Residential Area,Mario & Luigi: Bowser's Inside Story,Old Town,"A small square of houses where Toad's reside, with a tranquil fountain at its center.",BISTown.webp,area
 77.5,-99,red,Old Town,Mario & Luigi: Partners in Time,,The Toad Town depicted in the past of the Mushroom Kingdom. A large forested area with mushroom-like houses.,PITOld.png,area
 77.95,-93.45,flower,Gramma's Place,Mario & Luigi: Partners in Time,Old Town,A small local shop owned by Gramma Green and Gramma Red.,PITGramma.webp,location

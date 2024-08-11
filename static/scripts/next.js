@@ -5,25 +5,19 @@ var map = L.map('map', {
     zoomDelta: 0.5,
     zoomSnap: 0.5,
     maxBoundsViscosity: 1.0,
-}).setView([-70,100], 3);
+}).setView([-68.95, 80.35], 6);
 
 L.tileLayer('static/maps/Tiles/{z}/{x}/{y}.png', {
   continuousWorld: false,
   noWrap: true,  
-  minZoom: 0,
+  minZoom: 2,
   maxZoom: 9,
   maxBoundsViscosity: 1.0,
 }).addTo(map);
 
+map.setMaxBounds([[-292, -150], [100, 330]])
 
-// map.setMaxBounds([[0, 0], [157.5, 146]])
-
-// var imageUrl = 'static/maps/duck.webp';
-// var imageBounds =  [[0,0], [1000,1000]];
-
-// // Add the image overlay to the map
-// L.imageOverlay(imageUrl, imageBounds).addTo(map);
-
+//Uncomment this code to add an additional marker which will tell you the position it is at.
 // var marker = L.marker([-69.95, 80.35], {
 //     draggable: true,
 //   }).addTo(map);

@@ -1,6 +1,12 @@
-var waypoints = [];
+var waypoints = {
+    area:[],
+    location:[],
+    landmark:[],
+    vehicle:[],
 
-function addMarker({x, y, name, game, course, description, iconpic, imagesrc}) {
+};
+
+function addMarker({x, y, name, game, course, description, iconpic, imagesrc, tag}) {
     // Define the marker with the given coordinates
     var marker = L.marker([y, x], {icon: iconpic}).addTo(map);
     var courseInfo = course ? `(${course}) <br>` : '';
@@ -30,11 +36,12 @@ function addMarker({x, y, name, game, course, description, iconpic, imagesrc}) {
     // Bind the popup to the marker with the custom options
     marker.bindPopup(popupContent, customOptions);
 
-    waypoints.push(marker);
+    waypoints[tag].push(marker);
+    map.removeLayer(marker);
 }
 
-function toggleWaypoints() {
-    waypoints.forEach(function(marker) {
+function toggleWaypoints(tag) {
+    waypoints[tag].forEach(function(marker) {
         if (map.hasLayer(marker)) {
             map.removeLayer(marker);
         } else {

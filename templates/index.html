@@ -17,8 +17,19 @@
     <!-- Create a div element with an id for the map to be rendered into -->
     <div class='custom-popup' id="map"></div>
 
-    <div class="leaflet-control-custom">
-        <button onclick="toggleWaypoints()">Toggle Waypoints</button>
+    <div id="buttons-container">
+        <button class="toggle-button" onclick="toggleWaypoints('area')">
+            <img src="static/images/emblems/mushroom.svg" alt="Mushroom Icon" class="button-icon">
+            <span class="button-text">Areas</span>
+        </button>
+        <button class="toggle-button" onclick="toggleWaypoints('location')">
+            <img src="static/images/emblems/flower.svg" alt="Flower Icon" class="button-icon">
+            <span class="button-text">Locations</span>
+        </button>
+        <button class="toggle-button" onclick="toggleWaypoints('landmark')">
+            <img src="static/images/emblems/star.svg" alt="Star Icon" class="button-icon">
+            <span class="button-text">Landmarks</span>
+        </button>
     </div>
 
     <!-- Include Leaflet JavaScript -->

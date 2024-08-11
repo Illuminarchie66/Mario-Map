@@ -7,6 +7,7 @@ csvData.forEach(function(waypoint) {
         course: waypoint.course,
         description: waypoint.description,  
         iconpic: iconMapping[waypoint.icon], 
-        imagesrc: waypoint.src
+        imagesrc: waypoint.src,
+        tag: waypoint.tag
     });
 });
