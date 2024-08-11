@@ -81,3 +81,70 @@ x,y,icon,name,game,course,description,src,tag
 36.4,-135.4,vehicle,SS Brass,Dance Dance Revolution: Mario Mix,,"An airship comprised of musical instruments, used by Mario and Toad to track down the Music Keys. The airship has the ability to also work underwater, like a submarine.",ssbrass.png,vehicle
 33.32,-159.5,red,Whispering Hill,Paper Mario: The Origami King,Whispering Woods,A hillside in the woods where you can see Peach's Castle!,TOKHill.png,area
 47.3,-165.25,red,Whispering Woods,Paper Mario: The Origami King,,A lush green forest full of sentient trees atop of some small mountains. This is where Mario crash lands upon King Olly's attack. ,TOKWoods.webp,area
+52.38,-158.375,red,Whispering Spring,Paper Mario: The Origami King,Whispering Woods,A serene blue lake in the forest. It seems to revive withered and crumpled people and things.,TOKSpring.jpg,area
+52.5,-153.5,red,Sweet Sap Loggins,Paper Mario: The Origami King,Whispering Woods,A large old sentient tree that was cut down by Toads. Mario and Olivia revived him with a Soul Seed and a song.,TOKSap.webp,area
+66.77,-140.78,red,Toad's BBQ Food Eatery,Paper Mario: The Origami King,,"A small eatery and place to relax before Toad Town. All wood used is from the sentient trees around here, including the wood that is burnt (ouch)",TOKEatery.webp,area
+25.1,-140.85,red,Distant Waterfall,Paper Mario: The Origami King,Whispering Woods,A beautiful waterfall running through Whispering Woods into the Toad Town river.,TOKWaterfall.png,area
+93.39,-141.53,red,Logger Heads,Mario Party 9,Whispering Woods,Small huts built with the logs of a nearby forest. The minigame has players race to chop a piece of wood.,MP9Logger.jpg,area
+96.45,-147.32,flower,Oink Oink Farm,Paper Mario 64,Toad Town,"A farm for Li'l Oinks! There are a variety of Li'l Oink colors, each with a chance to drop an item.",PMOink.png,location
+92.1,-149.45,flower,Toad Town Station,Paper Mario 64,Toad Town,A train station which is an end of the Dry Dry Railroad. Here Mario can get the K64 to Mt. Rugged.,PMStation.webp,location
+100.4,-149.43,vehicle,K64,Paper Mario 64,,A steam train that runs along the Dry Dry Railroad. The train can be ridden for free!,K64.webp,vehicle
+86.21,-159.9,red,Mushroom Way,Super Mario RPG,,A short path extending from Mario's pad to Toad Town.,RPGWay.webp,area
+69.54,-166.828,mario,Mario's Pad,Super Mario RPG,,"This is the modest cosy home of the Mario Brothers, a short walk away from Toad Town, with Peach's Castle in the distance.",Mariospad.jpg,landmark
+91.25,-161.89,flower,Broque Madame's House,Mario & Luigi: Bowser's Inside Story,Blubble Lake,This is the house that Broque Madame resides in. Her house is the brawl attack challenge mode for Blubble Lake.,BISBroque.webp,location
+121.1,-171.8,red,Blubble Lake,Mario & Luigi: Bowser's Inside Story,,"A large rocky lake South of Toad Town. In the lake lies the Tower of Yikk, a large autonomous mechanical tower.",BISBlubble.webp,area
+133.4,-145.13,red,Forever Forest,Paper Mario 64,,"A dark purple wood near Toad Town, where you can get lost for days. Gloomy trees seem to go on forever in this place.",PMForever.webp,area
+152,-144.3,flower,Boo's Mansion,Paper Mario 64,Forever Forest,"A magnificent mansion filled with Boos. It is ruled by Lady Bow, which has been passed through her ancestors. ",PMBoo.webp,location
+112.2,-136,red,World 1-1,Super Mario 3D Land,3D Land,A grass plain with gentle streams and colorful boxes alongside the river.,3D1.png,area
+152,-104.875,red,World 1-1,New Super Mario Bros DS,DS,"A grassy path inhabited with Goombas and Koopas; filled with floating blocks, pipes and pits to avoid.",DS1.png,area
+157.1,-99.5,red,World 1-1,New Super Mario Bros Wii,Wii,"A path of literal rolling fields, inhabited by Goombas and Koopas; filled with floating blocks, pipes and pits to avoid.",WII1.webp,area
+153.3,-93.8,red,World 1-1,New Super Mario Bros 2,2,"A path of musical note blocks, and colorful boxes, inhabited by Goombas and Koopas.",21.png,area
+133,-127.57,vehicle,Splash Boat,Paper Mario: Color Splash,,The boat that Mario and Peach take to Port Prisma.,Splash.png,vehicle
+100.34,-127.92,vehicle,Origami Boat,Paper Mario: The Origami King,,The boat that Mario and Olivia use to explore the Great Sea. It is manned by Sea Captain Toad.,Origami.webp,vehicle
+97.57,-115.65,vehicle,Standard Kart,Mario Kart Wii,,The standard kart that Mario and his friends use to race each other on tracks across the Mushroom Kingdom.,Kart.webp,vehicle
+78.54,-121.52,vehicle,Thousand Boat,Paper Mario: The Thousand-Year Door,,The boat that Mario takes to Rogueport.,Thousand.jpg,vehicle
+92.39,-127.5,flower,Battle Lab,Paper Mario: The Origami King,Harbour Town,A training area where Mario can practice necessary skills for his journey.,TOKLab.webp,location
+93.95,-127.75,flower,Musee Champignon,Paper Mario: The Origami King,Harbour Town,"A museum containing art, origami and treasures that Mario collected on his journey.",TOKMuseum.webp,location
+95.5,-128.5,flower,Weapon and Item Shop,Paper Mario: The Origami King,Harbour Town,"An item shop on the harbour which sells Mushrooms, Fire Flowers,  Ice Flowers, POW Blocks and more.",TOKShop.webp,location
+98.2,-126.85,flower,Harbour Warehouses,Paper Mario: The Origami King,Harbour Town,A red warehouse full of boxes and crates. Here Mario can find the Manhole Hook to open up Graffiti Town.,TOKWarehouse.webp,location
+97.5,-124.8,flower,Toad Tram,Paper Mario: The Origami King,Harbour Town,"A cable car that goes all the way from Toad Town to the Autumn Region, passing by Overlook Mountain as a stop.",TOKTram.png,location
+92.95,-123.85,flower,Coffee Shop,Paper Mario: The Origami King,Harbour Town,"A stall which sells Turtle Tea and Rabbit Espresso, which can increase Mario's speed.",TOKTea.jpg,location
+90.9,-123.75,flower,Toad Town Mansion,Paper Mario: The Origami King,Harbour Town,A large house owned by a rich Yellow Toad. On the roof there is a confetti shop too.,TOKMansion.png,location
+85.6,-123.4,flower,The Water Wheel,Paper Mario: The Origami King,Harbour Town,The house of the running water wheel outside of Toad Town. Here is the entrance to the Graffiti Sewers.,TOKWater.webp,location
+87.41,-128.2,flower,"Fun, Funky and Functional",Paper Mario: The Origami King,Harbour Town,"An accessory shop which is a part of a chain of vendors, selling accessories like Heart or Guard Plus.",TOKFun.webp,location
+90.9,-129.3,red,Harbour Town,Paper Mario: The Origami King,,An island port resting on the river that passes through Toad Town. ,TOKHarbour.jpg,area
+77.68,-119.75,red,Toad Town Docks,Paper Mario 64,,"The docks in the South of Toad Town, where Mario is taken by a Whale to Lavalava Island.",PMHarbour.png,area
+78,-118.5,flower,Club 64,Paper Mario 64,Toad Town Docks,"A club along the docks,doubling as a cafe and a restaurant. The bartender 'plays a mean guitar'.",PMClub64.webp,location
+81,-118.55,flower,Crazy Cap,Super Mario Odyssey,,A franchise of clothes and cap shops which has recently opened in the Mushroom Kingdom.,SMOCap.png,location
+79,-116.75,flower,Mario Motors,Super Nintendo World,,A gift shop selling merchandise surrounding Mario's karting adventures.,IRLMotor.jpg,noncanon
+81.64,-115.1,flower,Shy Guy's Toy Box,Paper Mario 64,Southern Toad Town,"An empty building housing Shy Guy's Toy Box. It seems to be a playroom for Shy Guys, answering to no one here.",PMShy.webp,location
+84.1,-114.6,flower,Harry's Shop,Paper Mario 64,Southern Toad Town,"A shop run by Harry in the Residential Area. He buys, sells and checks items. If Mario helps him, he is allowed to take anything he likes from Harry's store room.",PMHarry.webp,location
+86.8,-115.03,flower,Tayce T.'s Kitchen,Paper Mario 64,Southern Toad Town,Home of the best cook around. Here Mario can give Tayce T ingredients and she will make him dishes to aid on his adventure.,PMTayce.webp,location
+84.08,-116.75,red,Southern Toad Town,Paper Mario 64,,A residential area of Toad Town that is close to the docks.,PMSouthern.png,area
+82.65,-109.05,flower,Toadley Clinic,Mario & Luigi: Bowser's Inside Story,Toad Town Mall,"A hospital owned by Dr Toadley, who claims to know everything of the Mushroom Kingdom. During the Blorb epidemic, he creates the Miracle Cure.",BISClinic.webp,location
+84.21,-111.86,flower,Item Shop,Mario & Luigi: Bowser's Inside Story,Toad Town Mall,"An item shop selling Mushrooms, Syrups and Nuts. You may also use a Scratch Card, to make back some of the coins you spend here.",BISItem.png,location
+82.3,-111.86,flower,Badge Shop,Mario & Luigi: Bowser's Inside Story,Toad Town Mall,"A shop selling useful badges to the Mario Bros, improving their performance in battle.",BISBadge.png,location
+78.95,-109,flower,Star Shop,Mario & Luigi: Bowser's Inside Story,Toad Town Mall,"An equipment shop selling the best gear. They also provide complimentary Royal Mushroom Tea, massages and mustache shaves.",BISStar.png,location
+79.2,-111.86,flower,Gear Shop,Mario & Luigi: Bowser's Inside Story,Toad Town Mall,"A standard equipment shop where you can purchase different overalls, socks, gloves and accessories.",BISGear.png,location
+77.3,-110.8,flower,Toadles Boutique,Mario & Luigi: Bowser's Inside Story,Toad Town Mall,"A distinguished equipment shop selling more refined overalls, socks, gloves and accessories.",BISToadles.png,location
+76.36,-111.89,flower,Tea Kiosk,Mario & Luigi: Bowser's Inside Story,Toad Town Mall,A quaint tea shop selling different varieties of Mushroom Tea.,BISTea.png,location
+80.7,-111.25,red,Toad Town Mall,Mario & Luigi: Bowser's Inside Story,,"The shopping hub of Toad Town. Two gentle streams flow through it, with many wonderful stores to explore.",BISMall.png,area
+88.56,-106.22,flower,Minh T.'s flower garden,Paper Mario 64,Toad Town Plaza,A magical garden made by Minh T. The archway is used as a door to Flower Fields.,PMGarden.jpg,location
+86.5,-103.87,flower,Merlon's House,Paper Mario 64,Toad Town Plaza,"Home of the Wizard Merlon, able to read the future with his crystal ball.",PMMerlon.webp,location
+88.57,-103.55,flower,Post Office,Paper Mario 64,Toad Town Plaza,"Run by the Postmaster, here Paratroopa's like Parakarry deliver mail across the Mushroom Kingdom.",PMPost.webp,location
+89.35,-104.38,flower,Toad House,Paper Mario 64,Toad Town Plaza,A Toad House run by just a regular Toad. Here Mario can rest and heal between adventures.,PMToadhouse2.webp,location
+87.6,-105,flower,Peach Fountain,Mario & Luigi: Bowser's Inside Story,Toad Town Plaza,A serene fountain in the center of Toad Town. It depicts Princess Peach and her love for her Kingdom.,BISFountain.png,location
+84.6,-103.5,flower,Dojo,Paper Mario 64,Toad Town Plaza,"Here Mario can train and hone his skills against Chan, Lee and the Toad martial artist, The Master.",PMDojo.webp,location
+84.15,-104.075,flower,Shroom Grocery,Paper Mario 64,Toad Town Plaza,"A quaint shop which sells various power-ups, such as Mushrooms, Fire Flowers, POW Blocks, etc.",PMShroom.webp,location
+82.9,-103.15,flower,Russ T.'s House,Paper Mario 64,Toad Town Plaza,The home of the wise Toad Russ T. He can teach Mario useful information about battle or about legends.,PMRuss.png,location
+82.68,-104.23,red,Toad Town Plaza,Paper Mario 64,,"The central hub of Toad Town. Outside of Peach's Castle, this is where the town is busiest.",PMPlaza.webp,location
+76,-105.1,red,Residential Area,Mario & Luigi: Bowser's Inside Story,Old Town,"A small square of houses where Toad's reside, with a tranquil fountain at its center.",BISTown.webp,area
+77.5,-99,red,Old Town,Mario & Luigi: Partners in Time,,The Toad Town depicted in the past of the Mushroom Kingdom. A large forested area with mushroom-like houses.,PITOld.png,area
+77.95,-93.45,flower,Gramma's Place,Mario & Luigi: Partners in Time,Old Town,A small local shop owned by Gramma Green and Gramma Red.,PITGramma.webp,location
+83.17,-95.46,flower,Toadstool Cafe,Super Nintendo World,,"A restaurant run by Chef Toad, serving various dishes like Mario's Bacon Cheeseburger and the ? Block Tiramisu.",IRLCafe.webp,location
+89,-95.66,flower,Inn,Super Mario RPG,Greater Castle Town,A cute inn where Mario can rest and heal.,RPGInn.png,location
+89.75,-98.34,flower,Raz & Raini's House,Super Mario RPG,Greater Castle Town,The house of two lovebirds who get married in Marrymore.,RPGRaz.png,location
+90.6,-96.1,flower,Item Shop,Super Mario RPG,Greater Castle Town,A standard item store selling Mushrooms and Juices. Mario also learns about Hidden Treasures from here.,RPGItem.png,location
+87.6,-100.34,red,Mario Circuit,Mario Kart Wii,Greater Castle Town,A nice course to drive through the houses of Toad Town in front of Peach's Castle.,MKWii.webp,area
+66.7,-164.3,vehicle,Sky Pop,Super Mario Land,,A yellow airplane used by Mario to save Princess Daisy from Tatanga.,Skypop.webp,vehicle
+87,-85.25,red,Castle Pier,Super Mario Galaxy,Castle Town,A small peaceful platform to look out and see the Castle during the Star Festival.,Galaxy.png,area
