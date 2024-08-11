@@ -1,5 +1,4 @@
 csvData.forEach(function(waypoint) {
-    console.log(waypoint.icon)
     addMarker({
         x: waypoint.x,
         y: waypoint.y,

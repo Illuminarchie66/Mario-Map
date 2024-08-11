@@ -24,12 +24,12 @@ L.tileLayer('static/maps/Tiles/{z}/{x}/{y}.png', {
 // // Add the image overlay to the map
 // L.imageOverlay(imageUrl, imageBounds).addTo(map);
 
-var marker = L.marker([-69.95, 80.35], {
-    draggable: true,
-  }).addTo(map);
-  marker.bindPopup('LatLng Marker').openPopup();
-  marker.on('dragend', function(e) {
-    var point = marker.getLatLng();
-    marker.getPopup().setContent('(' + point.lng + ', ' + point.lat + ')').openOn(map);
-  });
+// var marker = L.marker([-69.95, 80.35], {
+//     draggable: true,
+//   }).addTo(map);
+//   marker.bindPopup('LatLng Marker').openPopup();
+//   marker.on('dragend', function(e) {
+//     var point = marker.getLatLng();
+//     marker.getPopup().setContent('(' + point.lng + ', ' + point.lat + ')').openOn(map);
+//   });
 

@@ -47,11 +47,11 @@ function toggleWaypoints() {
 var redIcon = L.icon({
     iconUrl: "static/popups/icons/red-icon.png", // URL of the icon image
     shadowUrl: "static/popups/icons/marker-shadow.png",
-    iconSize: [40.2, 64.8], // Size of the icon
-    shadowSize:   [56.25, 60], // size of the shadow
-    iconAnchor: [20.1, 64.8], // Anchor point of the icon (tip of the marker)
+    iconSize: [53.6, 86.4], // Size of the icon
+    shadowSize:   [75, 80], // size of the shadow
+    iconAnchor: [26.8, 86.4], // Anchor point of the icon (tip of the marker)
     shadowAnchor: [22, 81],
-    popupAnchor: [0, -72] // Popup anchor relative to the icon
+    popupAnchor: [0, -90] // Popup anchor relative to the icon
 });
 
 var blueIcon = L.icon({
