@@ -14,7 +14,12 @@
 
 </head>
 <body>
-    <!-- Create a div element with an id for the map to be rendered into -->
+    <div class="slideshow-container">
+        <div class="background-image"></div>
+        <div class="background-overlay"></div>
+    </div>
+    <script src="{{ url_for('static', filename='scripts/background.js') }}" defer></script>
+
     <div class='custom-popup' id="map"></div>
 
     <div id="buttons-container">
@@ -40,15 +45,12 @@
     <script src="https://unpkg.com/leaflet-virtual-grid@1.0.7/dist/virtual-grid.js"></script>
 
     <script>
-        var csvData = {{ waypoints | safe }};
+        var waypointData = {{ waypoints | safe }};
+        var arrowData = {{ arrows | safe }};
         //var svgObject = document.getElementById('svgObject');
-        console.log(csvData);
-
     </script>
 
-    <!-- <script src="{{ url_for('static', filename='scripts/waypoint_script.js') }}" defer></script>
-    <script src="{{ url_for('static', filename='scripts/map_script.js') }}" defer></script>
-    <script src="{{ url_for('static', filename='scripts/add_waypoints_script.js') }}" defer></script> -->
+    <script src="https://rawcdn.githack.com/bbecquet/Leaflet.RotatedMarker/0.2.0/leaflet.rotatedMarker.js"></script>
     <script src="{{ url_for('static', filename='scripts/next.js') }}" defer></script>
     <script src="{{ url_for('static', filename='scripts/waypoint_script.js') }}" defer></script>
     <script src="{{ url_for('static', filename='scripts/add_waypoints_script.js') }}" defer></script>
