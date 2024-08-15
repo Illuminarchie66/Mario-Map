@@ -1,0 +1,10 @@
+static/maps/
+static/images/
+static/popups/images/
+.venv/
+.git/
+map7.svg
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
