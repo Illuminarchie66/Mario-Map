@@ -16,7 +16,7 @@ x,y,icon,name,game,course,description,src,tag
 73.6,-80.25,flower,Tail Tree,Super Mario 3D Land,,"A special tree that bears Super Leaves on its branches, granting Tanooki powers.",3DLTree.webp,location
 91.53,-84.56,red,Odyssey Hill,Super Mario Odyssey ,Mushroom Kingdom,"A hillside where a beautiful fountain resides, surrounded by flowers. ",MOFountain.png,area
 84.24,-90.4,flower,Mini Star Telescope,Mario Party 9,,"A large telescope on a stargazing hill, where Mario and his friends go to watch the Mini Stars. ",MP9Telescope.png,location
-82.17,-90.38,star,Rosalina's Hill,Super Mario Galaxy,Rosalina's Storybook ,"A grassy hill dotted with flowers with a large tree, where Rosalina went to go stargazing.",MGStorybook.webp,landmark
+82.17,-90.38,star,Rosalina's Hill,Super Mario Galaxy,Rosalina's Storybook,"A grassy hill dotted with flowers with a large tree, where Rosalina went to go stargazing.",MGStorybook.webp,landmark
 81.5,-84.83,red,Castle Town,Super Mario Galaxy,,"A small castle town, where the Toads are found celebrating the star festival.",MGTown.webp,area
 70.8,-66.7,red,Odyssey Well,Super Mario Odyssey,Mushroom Kingdom,A small well that leads to a difficult 2D section with a moon at the end.,MOWell.jpg,area
 89.75,-71.8,red,Hedge Garden,Super Mario Odyssey,Mushroom Kingdom,A series of hedge bshes tended to by a Toad. ,MOHedge.webp,area

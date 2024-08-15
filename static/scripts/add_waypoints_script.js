@@ -1,4 +1,5 @@
-csvData.forEach(function(waypoint) {
+console.log(waypointData);
+waypointData.forEach(function(waypoint) {
     addMarker({
         x: waypoint.x,
         y: waypoint.y,
@@ -11,3 +12,29 @@ csvData.forEach(function(waypoint) {
         tag: waypoint.tag
     });
 });
+
+console.log(arrowData);
+arrowData.forEach(function(arrow) {
+    addArrow({
+        x: arrow.x,
+        y: arrow.y,
+        name: arrow.name,
+        imagesrc: arrow.src,
+        angle: arrow.angle
+    })
+})
+
+// addMarker2({
+//     x: 0,
+//     y: 0,
+//     name: "test",
+//     game: "",
+//     course: "",
+//     description: "lorem ipsum bitches",
+//     iconpic: iconMapping["red"],
+//     images: ["peachcastle1.jpg", "MKWii.webp"],
+//     tag: "landmark"
+// })
+
+toggleWaypoints('landmark')
+toggleWaypoints('arrow')

@@ -3,53 +3,8 @@ var waypoints = {
     location:[],
     landmark:[],
     vehicle:[],
-
+    arrow:[]
 };
-
-function addMarker({x, y, name, game, course, description, iconpic, imagesrc, tag}) {
-    // Define the marker with the given coordinates
-    var marker = L.marker([y, x], {icon: iconpic}).addTo(map);
-    var courseInfo = course ? `(${course}) <br>` : '';
-    // Define the popup content
-    var popupContent = `
-        <div class="popup-container">
-            <div class="image-container">
-                <img src="static/popups/images/${imagesrc}" alt="Image">
-                <div class="fade-overlay"></div>
-            </div>
-            <div class="text-container">
-                <div class="title-text">${name} ${courseInfo}</div>
-                <div class="info-text">
-                    First appeared:
-                    ${game} <br> <br>
-                    ${description}
-                </div> 
-            </div>
-        </div>
-    `;
-
-    // Define custom options for the popup
-    var customOptions = {
-        'className': 'popupCustom'
-    };
-
-    // Bind the popup to the marker with the custom options
-    marker.bindPopup(popupContent, customOptions);
-
-    waypoints[tag].push(marker);
-    map.removeLayer(marker);
-}
-
-function toggleWaypoints(tag) {
-    waypoints[tag].forEach(function(marker) {
-        if (map.hasLayer(marker)) {
-            map.removeLayer(marker);
-        } else {
-            marker.addTo(map);
-        }
-    });
-}
-
 
 var redIcon = L.icon({
     iconUrl: "static/popups/icons/red-icon.png", // URL of the icon image
@@ -151,12 +106,12 @@ var vehicleIcon = L.icon({
     popupAnchor: [0, -90] // Popup anchor relative to the icon
 });
 
-// var rotatedIcon = L.icon({
-//     iconUrl: 'static/popups/icons/arrow-icon.png', // URL of the icon image
-//     iconSize: [53.6, 86.4], // Size of the icon
-//     iconAnchor: [26.8, 86.4], // Anchor point of the icon (tip of the marker)
-//     popupAnchor: [0, -90] // Popup anchor relative to the icon
-// });
+var rotatedIcon = L.icon({
+    iconUrl: 'static/popups/icons/arrow-icon.png', // URL of the icon image
+    iconSize: [1.5*1152/32, 1.5*963/32], // Size of the icon
+    iconAnchor: [1.5*1152/64, 1.5*963/64], // Anchor point of the icon (tip of the marker)
+    popupAnchor: [0, -30], // Popup anchor relative to the icon
+});
 
 var iconMapping = {
     "red": redIcon,
@@ -171,4 +126,155 @@ var iconMapping = {
     "vehicle": vehicleIcon
 };
 
+function addMarker({x, y, name, game, course, description, iconpic, imagesrc, tag}) {
+    // Define the marker with the given coordinates
+    var marker = L.marker([y, x], {icon: iconpic}).addTo(map);
+    var courseInfo = course ? `(${course}) <br>` : '';
+    // Define the popup content
+    var popupContent = `
+        <div class="popup-container">
+            <div class="image-container">
+                <img src="static/popups/images/${imagesrc}" alt="Image">
+                <div class="fade-overlay"></div>
+            </div>
+            <div class="text-container">
+                <div class="title-text">${name} ${courseInfo}</div>
+                <div class="info-text">
+                    First appeared:
+                    ${game} <br> <br>
+                    ${description}
+                </div> 
+            </div>
+        </div>
+    `;
+
+    // Define custom options for the popup
+    var customOptions = {
+        'className': 'popupCustom'
+    };
+
+    // Bind the popup to the marker with the custom options
+    marker.bindPopup(popupContent, customOptions);
+
+    waypoints[tag].push(marker);
+    map.removeLayer(marker);
+}
+
+
+function addMarker2({x, y, name, game, course, description, iconpic, images, tag}) {
+    // Define the marker with the given coordinates
+    var marker = L.marker([y, x], {icon: iconpic}).addTo(map);
+    var courseInfo = course ? `(${course}) <br>` : '';
+
+    // Generate image elements for the carousel
+    var imageElements = images.map((src, index) => {
+        return `
+            <div class="carousel-item ${index === 0 ? 'active' : ''}">
+                <img src="static/popups/images/${src}" alt="Image ${index + 1}">
+            </div>
+        `;
+    }).join('');
+
+    // Define the popup content with carousel
+    var popupContent = `
+        <div class="popup-container">
+            <div class="carousel-container">
+                <div class="carousel">
+                    ${imageElements}
+                </div>
+                <button class="carousel-control-prev">&lt;</button>
+                <button class="carousel-control-next">&gt;</button>
+            </div>
+            <div class="text-container">
+                <div class="title-text">${name} ${courseInfo}</div>
+                <div class="info-text">
+                    First appeared:
+                    ${game} <br> <br>
+                    ${description}
+                </div> 
+            </div>
+        </div>
+    `;
+
+    // Define custom options for the popup
+    var customOptions = {
+        'className': 'custom-popup'
+    };
+
+    // Bind the popup to the marker with the custom options
+    marker.bindPopup(popupContent, customOptions);
+
+    // Add the marker to the appropriate waypoint group
+    waypoints[tag].push(marker);
+    map.removeLayer(marker);
+
+    // Attach event listeners for carousel controls
+    marker.on('popupopen', function() {
+        var carouselContainer = marker.getPopup().getElement().querySelector('.carousel');
+        var items = carouselContainer.querySelectorAll('.carousel-item');
+        var currentIndex = 0;
+
+        // Show the previous image
+        carouselContainer.parentElement.querySelector('.carousel-control-prev').onclick = function() {
+            console.log(currentIndex);
+            items[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 1;
+            items[currentIndex].classList.add('active');
+        };
+
+        // Show the next image
+        carouselContainer.parentElement.querySelector('.carousel-control-next').onclick = function() {
+            console.log("bi");
+            items[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0;
+            items[currentIndex].classList.add('active');
+        };
+    });
+}
+
+
+
+function addArrow({x, y, name, imagesrc, angle}) {
+    var marker = L.marker([y, x], {icon: rotatedIcon, rotationAngle: angle}).addTo(map);
+    // Define the popup content
+    var popupContent = `
+        <div class="popup-container">
+            <div class="image-container">
+                <img src="static/popups/images/${imagesrc}" alt="Image">
+                <div class="fade-overlay"></div>
+            </div>
+            <div class="text-container">
+                <div class="info-text">
+                    This is the way to:
+                </div> 
+                <div class="title-text">${name}</div>
+            </div>
+        </div>
+    `;
+
+    // Define custom options for the popup
+    var customOptions = {
+        'className': 'popupCustom'
+    };
+
+    // Bind the popup to the marker with the custom options
+    marker.bindPopup(popupContent, customOptions);
+
+    waypoints["arrow"].push(marker);
+    map.removeLayer(marker);
+}
+
+function toggleWaypoints(tag) {
+    waypoints[tag].forEach(function(marker) {
+        if (map.hasLayer(marker)) {
+            map.removeLayer(marker);
+        } else {
+            marker.addTo(map);
+        }
+    });
+}
+
+
+
 //L.marker([51.5, -0.09], { icon: rotatedIcon }).addTo(map);
+

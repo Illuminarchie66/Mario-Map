@@ -5,8 +5,8 @@
 }
 
 #map {
-    width: 1118px;
-    height: 660px;
+    width: 1300px;
+    height: 800px;
     background-color: #009aef; /* Set the desired background color */
     border: 5px solid;
     position: absolute;
@@ -17,7 +17,7 @@
 }
 
 .custom-popup .leaflet-popup-content {
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 0 0 0 0;
 }
 
@@ -25,17 +25,29 @@
 background:white;
 border-radius: 20px;
 padding: 0 0 3px 0; /*Deleted top and bottom white sides!*/
-width: 350px;
+width: 450px;
 margin-bottom: 8px;
 }
 
-.custom-popup .leaflet-popup-content-wrapper a {
-    color:rgba(255,255,255,0.5);
-}
+.custom-popup .leaflet-popup-close-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: none;
+	text-align: center;
+	width: 34px;
+	height: 24px;
+	font: 16px/24px 'papermario';
+	color: #ffffff;
+	text-decoration: none;
+	background: transparent;
+	}
 
-.custom-popup .leaflet-container a.leaflet-popup-close-button {
-    color:white;
-}
+.custom-popup .leaflet-popup-close-button:hover,
+
+.custom-popup .leaflet-popup-close-button:focus {
+	color: #ffffff;
+	}
 
 .image-container {
     overflow: hidden; /* Crop overflow content */
@@ -43,7 +55,7 @@ margin-bottom: 8px;
     border-top-right-radius: 20px; /* Rounded top-right corner */
     margin: 0;
     position: relative;
-    width: 350px; /* Adjust width as needed */
+    width: 450px; /* Adjust width as needed */
     height: auto;
 }
 
@@ -59,29 +71,208 @@ margin-bottom: 8px;
 
 /* Define styles for the image within the container */
 .image-container img {
-    width: 100%;
+    width: 450px;
     height: auto;
 }
 
 .text-container {
     margin: 5px 5px 5px 5px;
-    width: 325px;
+    width: 420px;
     top: -50px;
     bottom:5px;
 }
 
 .title-text {
-    font-size: 15px;
+    font-size: 20px;
     font-family: 'papermario';
     bottom: -5px;
 }
 
 .info-text {
-    font-size: 13px;
+    font-size: 15px;
     font-family: 'papermario';
 }
+
+/* Style for the close button's container */
 
 .rotated-marker {
     transform-origin: center center;
     transform: rotate(45deg); /* Adjust the angle as needed */
+}
+
+
+.toggle-button {
+    font-family: 'papermario', sans-serif; /* Use the 'papermario' font */
+    font-size: 18px; /* Adjust the font size as needed */
+    color: white; /* White text color */
+    background-color: red; /* Red button color */
+    border: none; /* Remove default border */
+    padding: 15px 50px; /* Increase padding for a larger button */
+    border-radius: 20px; /* Rounded edges */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6), /* Increased blur and opacity for the outer shadow */
+            inset 0 -4px 8px rgba(255, 255, 255, 0.4);
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-bottom: 10px; /* Space between the buttons */
+    position: relative;
+    overflow: hidden;
+    display: flex; /* Ensure the image and text are aligned */
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center the content horizontally */
+}
+
+/* Button hover effect */
+.toggle-button:hover {
+    background-color: darkred; /* Slightly darker red on hover */
+}
+
+/* Positioning the toggle buttons */
+#buttons-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;/* Align the buttons to the right */
+}
+
+/* Style the images inside the buttons */
+.button-icon {
+    position: absolute; /* Position image absolutely within button */
+    left: 10px; /* Distance from the left edge of the button */
+    top: 50%; /* Vertically center the image */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+    height: 50px; /* Set the height of the icon */
+    width: 50px; /* Set the width of the icon */
+}
+
+/* Additional shiny effect */
+.toggle-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.4), transparent);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.toggle-button:hover::after {
+    opacity: 1;
+}
+
+.button-text {
+    margin-left: 20px;
+    display: inline-block; /* Ensure text wraps correctly */
+}
+
+
+
+
+
+.slideshow-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 115%; /* Double the viewport width */
+    height: 100%;
+    background-size: cover;
+    background-position: left center;
+    transition: opacity 1s ease-in-out;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    background: white;
+    opacity: 0.5; /* Adjust to control tint strength */
+    transition: opacity 1s ease-in-out;
+}
+
+/* Panning Animation */
+@keyframes pan {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-10%);
+    }
+}
+
+.panning {
+    animation: pan 8s linear infinite; /* Adjust duration as needed */
+}
+
+
+
+
+.carousel-container {
+    position: relative;
+    width: 450px; /* Set to the width of your popup */
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* Carousel Items */
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box; /* Ensures padding and borders are included in the width */
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    display: none;
+}
+
+.carousel-item.active {
+    display: block;
+    width:450px;
+    height:auto;
+    opacity: 1;
+}
+
+/* Ensure the image fits the container */
+.carousel-item img {
+    width: 100%; /* Makes the image fit the container width */
+    height: auto; /* Maintains the aspect ratio of the image */
+    display: block; /* Removes any default spacing below images */
+}
+
+/* Carousel Controls */
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
 }

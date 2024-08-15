@@ -1,0 +1,50 @@
+.carousel-container {
+    position: relative;
+    width: 450px; /* Set to the width of your popup */
+    height: auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+/* Carousel Items */
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.carousel-item {
+    width:450px;
+    height:auto;
+    transition: opacity 0.5s ease-in-out;
+    display: none;
+}
+
+.carousel-item.active {
+    display: block;
+    width:450px;
+    height:auto;
+}
+
+/* Carousel Controls */
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
