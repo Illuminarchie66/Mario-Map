@@ -1,9 +1,9 @@
 from flask import Flask, render_template
 import pandas as pd
 
-application = Flask(__name__)
+app = Flask(__name__)
 
-@application.route('/')
+@app.route('/')
 def home():
     waypoints = pd.read_csv('static/popups/Waypoints.csv')
     waypoints_json = waypoints.to_json(orient='records')
@@ -13,4 +13,4 @@ def home():
     return render_template('index.html', waypoints=waypoints_json, arrows=arrows_json)
 
 if __name__ == '__main__':
-    application.run(debug=True)
+    app.run(debug=True)
