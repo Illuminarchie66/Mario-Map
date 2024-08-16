@@ -1,0 +1,6 @@
+.venv/
+map7.svg
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
