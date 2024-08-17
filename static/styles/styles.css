@@ -276,3 +276,9 @@ margin-bottom: 8px;
 .carousel-control-next {
     right: 10px;
 }
+
+
+.leaflet-tile-container img {
+    width: 257px !important;
+    height: 257px !important;
+  }
