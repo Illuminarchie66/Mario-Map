@@ -1,0 +1,78 @@
+.custom-popup .leaflet-popup-content {
+    border-radius: 20px;
+    margin: 0 0 0 0;
+}
+
+.custom-popup .leaflet-popup-content-wrapper {
+background:white;
+border-radius: 20px;
+padding: 0 0 3px 0; /*Deleted top and bottom white sides!*/
+width: 450px;
+margin-bottom: 8px;
+}
+
+.custom-popup .leaflet-popup-close-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: none;
+	text-align: center;
+	width: 34px;
+	height: 24px;
+	font: 16px/24px 'papermario';
+	color: #ffffff;
+	text-decoration: none;
+	background: transparent;
+	}
+
+.custom-popup .leaflet-popup-close-button:hover,
+
+.custom-popup .leaflet-popup-close-button:focus {
+	color: #ffffff;
+	}
+
+.image-container {
+    overflow: hidden; /* Crop overflow content */
+    border-top-left-radius: 20px; /* Rounded top-left corner */
+    border-top-right-radius: 20px; /* Rounded top-right corner */
+    margin: 0;
+    position: relative;
+    width: 450px; /* Adjust width as needed */
+    height: auto;
+}
+
+/* Overlay for the fade effect */
+.fade-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; /* Adjust height for the fade effect */
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); /* Fade from transparent to opaque white */
+}
+
+/* Define styles for the image within the container */
+.image-container img {
+    width: 450px;
+    height: auto;
+}
+
+.text-container {
+    margin: 5px 5px 5px 5px;
+    width: 420px;
+    top: -50px;
+    bottom:5px;
+}
+
+.title-text {
+    font-size: 20px;
+    font-family: 'papermario';
+    bottom: -5px;
+}
+
+.info-text {
+    font-size: 15px;
+    font-family: 'papermario';
+}
+
+/* Style for the close button's container */

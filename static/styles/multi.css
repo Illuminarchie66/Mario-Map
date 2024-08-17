@@ -1,22 +1,22 @@
 .carousel-container {
     position: relative;
     width: 450px; /* Set to the width of your popup */
-    height: auto;
     overflow: hidden;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 /* Carousel Items */
 .carousel {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    
 }
 
 .carousel-item {
-    width:450px;
-    height:auto;
+    min-width: 100%;
+    box-sizing: border-box; /* Ensures padding and borders are included in the width */
     transition: opacity 0.5s ease-in-out;
+    opacity: 0;
     display: none;
 }
 
@@ -24,6 +24,14 @@
     display: block;
     width:450px;
     height:auto;
+    opacity: 1;
+}
+
+/* Ensure the image fits the container */
+.carousel-item img {
+    width: 100%; /* Makes the image fit the container width */
+    height: auto; /* Maintains the aspect ratio of the image */
+    display: block; /* Removes any default spacing below images */
 }
 
 /* Carousel Controls */

@@ -1,0 +1,65 @@
+.toggle-button {
+    font-family: 'papermario', sans-serif; /* Use the 'papermario' font */
+    font-size: 18px; /* Adjust the font size as needed */
+    color: white; /* White text color */
+    background-color: red; /* Red button color */
+    border: none; /* Remove default border */
+    padding: 15px 50px; /* Increase padding for a larger button */
+    border-radius: 20px; /* Rounded edges */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6), /* Increased blur and opacity for the outer shadow */
+            inset 0 -4px 8px rgba(255, 255, 255, 0.4);
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-bottom: 10px; /* Space between the buttons */
+    position: relative;
+    overflow: hidden;
+    display: flex; /* Ensure the image and text are aligned */
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center the content horizontally */
+}
+
+/* Button hover effect */
+.toggle-button:hover {
+    background-color: darkred; /* Slightly darker red on hover */
+}
+
+/* Positioning the toggle buttons */
+#buttons-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;/* Align the buttons to the right */
+}
+
+/* Style the images inside the buttons */
+.button-icon {
+    position: absolute; /* Position image absolutely within button */
+    left: 10px; /* Distance from the left edge of the button */
+    top: 50%; /* Vertically center the image */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+    height: 50px; /* Set the height of the icon */
+    width: 50px; /* Set the width of the icon */
+}
+
+/* Additional shiny effect */
+.toggle-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.4), transparent);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.toggle-button:hover::after {
+    opacity: 1;
+}
+
+.button-text {
+    margin-left: 20px;
+    display: inline-block; /* Ensure text wraps correctly */
+}
