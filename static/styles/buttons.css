@@ -63,3 +63,39 @@
     margin-left: 20px;
     display: inline-block; /* Ensure text wraps correctly */
 }
+
+
+
+.addon-button-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.addon-square-button {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+.addon-square-button img {
+    width: 95%;
+    height: 80%;
+}
+
+.addon-square-button:focus {
+    outline: none;
+}
+
+.addon-square-button:hover {
+    background-color: darkred;
+}
