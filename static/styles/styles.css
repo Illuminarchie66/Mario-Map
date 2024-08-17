@@ -278,7 +278,8 @@ margin-bottom: 8px;
 }
 
 
-.leaflet-tile-container img {
-    width: 513px !important;
-    height: 513px !important;
+.leaflet-container img.leaflet-tile {
+    mix-blend-mode: normal;
+    width: 257px !important;
+    height: 257px !important;
   }
