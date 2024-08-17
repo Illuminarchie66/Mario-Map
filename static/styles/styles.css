@@ -279,7 +279,6 @@ margin-bottom: 8px;
 
 
 .leaflet-container img.leaflet-tile {
-    mix-blend-mode: normal;
-    width: 257px !important;
-    height: 257px !important;
-  }
+	/* See: https://bugs.chromium.org/p/chromium/issues/detail?id=600120 */
+	mix-blend-mode: plus-lighter;
+}
