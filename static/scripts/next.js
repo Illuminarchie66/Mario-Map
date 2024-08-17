@@ -7,7 +7,7 @@ var map = L.map('map', {
     maxBoundsViscosity: 1.0,
 }).setView([-68.95, 80.35], 6);
 
-L.tileLayer('static/maps/Tiles/{z}/{x}/{y}.png', {
+L.tileLayer('https://mario-map.s3.eu-west-2.amazonaws.com/Tiles/{z}/{x}/{y}.png', {
   continuousWorld: false,
   noWrap: true,  
   minZoom: 2,
