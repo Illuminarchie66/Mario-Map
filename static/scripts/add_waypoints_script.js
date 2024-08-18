@@ -1,4 +1,3 @@
-console.log(waypointData);
 waypointData.forEach(function(waypoint) {
     addMarker({
         x: waypoint.x,
@@ -13,7 +12,6 @@ waypointData.forEach(function(waypoint) {
     });
 });
 
-console.log(arrowData);
 arrowData.forEach(function(arrow) {
     addArrow({
         x: arrow.x,
