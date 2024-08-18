@@ -216,7 +216,6 @@ function addMarker2({x, y, name, game, course, description, iconpic, images, tag
 
         // Show the previous image
         carouselContainer.parentElement.querySelector('.carousel-control-prev').onclick = function() {
-            console.log(currentIndex);
             items[currentIndex].classList.remove('active');
             currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 1;
             items[currentIndex].classList.add('active');
@@ -224,7 +223,6 @@ function addMarker2({x, y, name, game, course, description, iconpic, images, tag
 
         // Show the next image
         carouselContainer.parentElement.querySelector('.carousel-control-next').onclick = function() {
-            console.log("bi");
             items[currentIndex].classList.remove('active');
             currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0;
             items[currentIndex].classList.add('active');
