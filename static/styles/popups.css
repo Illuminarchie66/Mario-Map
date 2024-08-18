@@ -7,7 +7,7 @@
 background:white;
 border-radius: 20px;
 padding: 0 0 3px 0; /*Deleted top and bottom white sides!*/
-width: 450px;
+width: 29.3vw;
 margin-bottom: 8px;
 }
 
@@ -37,7 +37,7 @@ margin-bottom: 8px;
     border-top-right-radius: 20px; /* Rounded top-right corner */
     margin: 0;
     position: relative;
-    width: 450px; /* Adjust width as needed */
+    width: 29.3vw; /* Adjust width as needed */
     height: auto;
 }
 
@@ -53,26 +53,110 @@ margin-bottom: 8px;
 
 /* Define styles for the image within the container */
 .image-container img {
-    width: 450px;
+    width: 29.3vw;
     height: auto;
 }
 
 .text-container {
     margin: 5px 5px 5px 5px;
-    width: 420px;
+    width: 27.3vw;
     top: -50px;
     bottom:5px;
 }
 
 .title-text {
-    font-size: 20px;
+    font-size: 1.3vw;
     font-family: 'papermario';
     bottom: -5px;
 }
 
 .info-text {
-    font-size: 15px;
+    font-size: 0.975vw;
     font-family: 'papermario';
 }
 
-/* Style for the close button's container */
+
+@media (max-width: 475px) {
+    .custom-popup .leaflet-popup-content-wrapper {
+        width: 70vw;
+    }
+
+    .image-container {
+        width: 70vw; 
+        height: auto;
+    }
+
+    .image-container img {
+        width: 70vw;
+        height: auto;
+    }
+
+    .text-container {
+        width: 68vw;
+    }
+
+    .title-text {
+        font-size: 3.1vw;
+    }
+
+    .info-text {
+        font-size: 2.3vw;
+    }
+}   
+
+@media (min-width: 475px) and (max-width: 620px) {
+    .custom-popup .leaflet-popup-content-wrapper {
+        width: 56vw;
+    }
+
+    .image-container {
+        width: 56vw; 
+        height: auto;
+    }
+
+    .image-container img {
+        width: 56vw;
+        height: auto;
+    }
+
+    .text-container {
+        width: 53vw;
+    }
+
+    .title-text {
+        font-size: 2.5vw;
+    }
+
+    .info-text {
+        font-size: 1.8vw;
+    }
+}   
+
+
+@media (min-width: 620px) and (max-width: 880px) {
+    .custom-popup .leaflet-popup-content-wrapper {
+        width: 52vw;
+    }
+
+    .image-container {
+        width: 52vw; 
+        height: auto;
+    }
+
+    .image-container img {
+        width: 52vw;
+        height: auto;
+    }
+
+    .text-container {
+        width: 48vw;
+    }
+
+    .title-text {
+        font-size: 2.5vw;
+    }
+
+    .info-text {
+        font-size: 1.8vw;
+    }
+}   

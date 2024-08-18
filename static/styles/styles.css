@@ -4,8 +4,8 @@
 }
 
 #map {
-    width: 1300px;
-    height: 800px;
+    width: 90vw; /* Set the width to 90% of the viewport width */
+    height: 70vh; /* Set the height to 70% of the viewport height */
     background-color: #009aef; /* Set the desired background color */
     border: 5px solid;
     position: absolute;
@@ -13,6 +13,31 @@
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
+}
+
+/* Media query for very small screens */
+@media (max-width: 600px) {
+    #map {
+        width: 80vw; /* Slightly increase the width to make better use of small screens */
+        height: 68vh; /* Decrease the height for small screens */
+        transform: translate(-50%, -52.5%);
+    }
+}
+
+/* Media query for tablets and medium screens */
+@media (min-width: 600px) and (max-width: 1024px) {
+    #map {
+        width: 70vw; /* Adjust the width for medium screens */
+        height: 68vh; /* Adjust the height for medium screens */
+    }
+}
+
+/* Media query for larger screens */
+@media (min-width: 1024px) {
+    #map {
+        width: 70vw; /* Adjust the width for larger screens */
+        height: 85vh; /* Adjust the height for larger screens */
+    }
 }
 
 .leaflet-container img.leaflet-tile {
