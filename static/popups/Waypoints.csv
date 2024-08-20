@@ -73,7 +73,7 @@ x,y,icon,name,game,course,description,src,tag
 40.14,-86.4,golf,Hole 6,Mario Golf: Toadstool Tour,,A mushroom filled clearing in a forested area. There is a small lake in the center with a mushroom shaped island. It is par 3.,TTHole6.webp,area
 50.62,-93.8,golf,Hole 7,Mario Golf: Toadstool Tour,,"A clearing along a hill with two ponds surrounded by mushrooms. Each pond has a small island in the center, connected by a loose bridge. It is par 4.",TTHole7.webp,area
 51.43,-95.56,flower,Toadsworth Statue,Mario Golf: Toadstool Tour,Hole 7,"A statue celebrating Princess Peach's longtime steward, Toadsworth.",TTToadsworth.png,location
-46.9,-111.58,red,Farmland,Paper Mario: The Origami King,,Land out West of Toad Town where denizens of the Mushroom Kingdom work and reside in their Mushroom houses.,TOKFarmland.png,area
+46.9,-111.58,red,Farmland,Paper Mario: The Origami King,,Land out West of Toad Town where denizens of the Mushroom Kingdom work and reside in their Mushroom houses.,TOKFarm.png,area
 50.28,-114.03,flower,Toadette's House,Super Mario Run,,The house where Toadette lives! It is shaped to look like her head.,MRToadette2.webp,location
 55.63,-103.58,flower,Posh Toad House,Super Mario Run,,"An upscale home with a nice garden, even more perfect for Toads.",MRPosh.webp,location
 23.69,-107.33,flower,Classy Toad House,Super Mario Run,,A large extravagent home designed exclusively for Toads.,MRClassy.webp,location
