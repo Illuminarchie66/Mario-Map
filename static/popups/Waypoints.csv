@@ -1,7 +1,7 @@
 x,y,icon,name,game,course,description,src,tag
 80.35,-68.95,peach,Peach's Castle,Super Mario RPG,Mushroom Kingdom,"Princess Peach's home and castle seen in most Mario games, where she rules the Mushroom Kingdom.",peachcastle1.jpg,landmark
 80.35,-72.535,red,Golf Gardens,Mario Golf: Advance Tour,,The gardens found directly outside of Peach's castle. ,MGATGardens.jpg,area
-80.355,-66.68,red,Courtyard,Super Mario 64,,"A small courtyard containing the 'L is real 2401' star statue, and the stages Big Boo's Haunt and Battle Fort.",M64Courtyard.webp,area
+80.355,-66.68,red,Courtyard,Super Mario 64,,"A small courtyard containing the 'L is real 2401' star statue, and the stages Big Boo's Haunt and Battle Fort.",M64Courtyard.jpg,area
 80.355,-65.185,red,Superstar Gardens,Mario & Luigi: Superstar Saga,Peach's Castle,Cute gardens found outside of Peach's Castle. Here the Mario Bros set off on their adventure to the Bean Bean Kingdom.,MLSSGardens.png,area
 80.355,-58.84,red,Baseball Gardens,Mario Superstar Baseball,Peach Garden,A baseball court outside of Peach's Castle. Surrounded by a stadium with a large portrait of Princess Peach.,MSSBGarden.png,area
 80.355,-54.15,flower,Peach Manor,Game & Watch Gallery 4,Chef,A large pink and white manor with cute gardens outside of it.,MK8DManor.webp,location
@@ -44,8 +44,8 @@ x,y,icon,name,game,course,description,src,tag
 149,-46.16,flower,Toad Tram,Paper Mario: The Origami King,Overlook Mountain,"A cable car that goes all the way from Toad Town to the Autumn Region, passing by Overlook Mountain as a stop.",TOKToadtram.webp,location
 145.15,-39.5,flower,Overlook Tower,Paper Mario: The Origami King,Overlook Mountain,"A tall tower on the top of Overlook Mountain, famous for its gift shop and ""million-coin"" nighttime view. ",TOKTower.webp,location
 138.42,-33.2,red,Overlook Sports Park,Paper Mario: The Origami King,Overlook Mountain,A large field which acts as a sports play area. Mario fights Macho Shy Guys here. ,TOKSports.jpg,area
-146.5,-16.31,tennis,The Peach Dome,Mario Power Tennis,,A large stadium owned by Princess Peach with seats for thousands of fans. Many tennis tournaments are hosted here.,Peachdome.webp,landmark
-81.2,-77.68,flower,Peach's Castle Cannon,Super Mario 64,64 Gardens,A cannon outside of Peach's Castel which is unlocked upon collecting 120 (or 150) stars.,64cannon.png,location
+146.5,-16.31,tennis,The Peach Dome,Mario Power Tennis,,A large stadium owned by Princess Peach with seats for thousands of fans. Many tennis tournaments are hosted here.,Peachdome.jpg,landmark
+81.2,-77.68,flower,Peach's Castle Cannon,Super Mario 64,64 Gardens,A cannon outside of Peach's Castle which is unlocked upon collecting 120 (or 150) stars.,64cannon.png,location
 70.47,-60.64,vehicle,Koopa Cruiser,Mario & Luigi: Superstar Saga,,Bowser's personal airship used to bring Mario and Bowser to the Beanbean Kingdom. It was also used to fight in the skies during the Shroob invasion.,Koopacruiser.png,vehicle
 67.95,-50.92,red,Peach's Castle Court,Mario Sports Mix,,"A grassy court full of tranquil sprinklers and water fountains. Here you can play dodgeball, basketball, hockey and volleyball!",MSMCourt.webp,area
 73.21,-89.3,flower,Yoshi's House,Super Mario World,,"A series of trees decorated with berries, next to a bed of flowers and a fireplace.This seems to be an imitation of Yoshi's home back in Dinosaur Land.",MOYoshi.jpg,location
@@ -73,11 +73,11 @@ x,y,icon,name,game,course,description,src,tag
 40.14,-86.4,golf,Hole 6,Mario Golf: Toadstool Tour,,A mushroom filled clearing in a forested area. There is a small lake in the center with a mushroom shaped island. It is par 3.,TTHole6.webp,area
 50.62,-93.8,golf,Hole 7,Mario Golf: Toadstool Tour,,"A clearing along a hill with two ponds surrounded by mushrooms. Each pond has a small island in the center, connected by a loose bridge. It is par 4.",TTHole7.webp,area
 51.43,-95.56,flower,Toadsworth Statue,Mario Golf: Toadstool Tour,Hole 7,"A statue celebrating Princess Peach's longtime steward, Toadsworth.",TTToadsworth.png,location
-46.9,-111.58,red,Farmland,Paper Mario: The Origami King,,Land out West of Toad Town where denizens of the Mushroom Kingdom work and reside in their Mushroom houses.,TOKFarmland.png,area
+46.9,-111.58,red,Farmland,Paper Mario: The Origami King,,Land out West of Toad Town where denizens of the Mushroom Kingdom work and reside in their Mushroom houses.,TOKFarm.png,area
 50.28,-114.03,flower,Toadette's House,Super Mario Run,,The house where Toadette lives! It is shaped to look like her head.,MRToadette2.webp,location
 55.63,-103.58,flower,Posh Toad House,Super Mario Run,,"An upscale home with a nice garden, even more perfect for Toads.",MRPosh.webp,location
 23.69,-107.33,flower,Classy Toad House,Super Mario Run,,A large extravagent home designed exclusively for Toads.,MRClassy.webp,location
-23.75,-123.4,red,Hole 5,Mario Golf: Toadstool Tour,,A series of small islands and mushrooms connected by bridges. Cheep Cheeps jump out around these islands. It is par 4.,TTHole5.webp,area
+23.75,-123.4,golf,Hole 5,Mario Golf: Toadstool Tour,,A series of small islands and mushrooms connected by bridges. Cheep Cheeps jump out around these islands. It is par 4.,TTHole5.webp,area
 36.4,-135.4,vehicle,SS Brass,Dance Dance Revolution: Mario Mix,,"An airship comprised of musical instruments, used by Mario and Toad to track down the Music Keys. The airship has the ability to also work underwater, like a submarine.",ssbrass.png,vehicle
 33.32,-159.5,red,Whispering Hill,Paper Mario: The Origami King,Whispering Woods,A hillside in the woods where you can see Peach's Castle!,TOKHill.png,area
 47.3,-165.25,red,Whispering Woods,Paper Mario: The Origami King,,A lush green forest full of sentient trees atop of some small mountains. This is where Mario crash lands upon King Olly's attack. ,TOKWoods.webp,area
@@ -140,7 +140,7 @@ x,y,icon,name,game,course,description,src,tag
 82.68,-104.23,red,Toad Town Plaza,Paper Mario 64,,"The central hub of Toad Town. Outside of Peach's Castle, this is where the town is busiest.",PMPlaza.webp,area
 76,-105.1,red,Residential Area,Mario & Luigi: Bowser's Inside Story,Old Town,"A small square of houses where Toad's reside, with a tranquil fountain at its center.",BISTown.webp,area
 77.5,-99,red,Old Town,Mario & Luigi: Partners in Time,,The Toad Town depicted in the past of the Mushroom Kingdom. A large forested area with mushroom-like houses.,PITOld.png,area
-77.95,-93.45,flower,Gramma's Place,Mario & Luigi: Partners in Time,Old Town,A small local shop owned by Gramma Green and Gramma Red.,PITGramma.webp,location
+77.95,-93.45,flower,Gramma's Place,Mario & Luigi: Partners in Time,Old Town,A small local shop owned by Gramma Green and Gramma Red.,PITGramma.jpg,location
 83.17,-95.46,flower,Toadstool Cafe,Super Nintendo World,,"A restaurant run by Chef Toad, serving various dishes like Mario's Bacon Cheeseburger and the ? Block Tiramisu.",IRLCafe.webp,location
 89,-95.66,flower,Inn,Super Mario RPG,Greater Castle Town,A cute inn where Mario can rest and heal.,RPGInn.png,location
 89.75,-98.34,flower,Raz & Raini's House,Super Mario RPG,Greater Castle Town,The house of two lovebirds who get married in Marrymore.,RPGRaz.png,location

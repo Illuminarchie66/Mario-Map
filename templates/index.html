@@ -4,24 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mario Map Project</title>
-    <!-- Include Leaflet CSS -->
+
+    <!-- Basic Open Graph tags -->
+    <meta property="og:title" content="Mario Map Project" />
+    <meta property="og:description" content="An interactive map of the Mario Universe!" />
+    <meta property="og:image" content="https://mario-map.s3.eu-west-2.amazonaws.com/globe.png" />
+    <meta property="og:url" content="http://mario-map-project.eu-west-2.elasticbeanstalk.com/" />
+
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/buttons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/popups.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/background.css') }}">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
         crossorigin=""/>
-    <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <!-- <object type="image/svg+xml" data="{{ url_for('static', filename='maps/Map-Test.svg') }}" id="svgObject"></object> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@1.6.0/Control.FullScreen.min.css" />
 
 </head>
 <body>
+
+    <!-- Background element -->
     <div class="slideshow-container">
         <div class="background-image"></div>
         <div class="background-overlay"></div>
     </div>
     <script src="{{ url_for('static', filename='scripts/background.js') }}" defer></script>
 
+    <!-- Map element -->
     <div class='custom-popup' id="map"></div>
 
+    <!-- Toggle buttons -->
     <div id="buttons-container">
         <button class="toggle-button" onclick="toggleWaypoints('area')">
             <img src="static/images/emblems/mushroom.svg" alt="Mushroom Icon" class="button-icon">
@@ -37,7 +49,16 @@
         </button>
     </div>
 
-    <!-- Include Leaflet JavaScript -->
+    <div class="addon-button-container">
+        <button class="addon-square-button" onclick="toggleWaypoints('arrow')">
+            <img src="static/images/emblems/arrow.svg" alt="Arrow">
+        </button>
+        <button class="addon-square-button" onclick="toggleWaypoints('vehicle')">
+            <img src="static/images/emblems/vehicle.png" alt="Vehicle">
+        </button>
+    </div>
+
+    <!-- Scripts -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
         crossorigin=""></script>
@@ -47,10 +68,10 @@
     <script>
         var waypointData = {{ waypoints | safe }};
         var arrowData = {{ arrows | safe }};
-        //var svgObject = document.getElementById('svgObject');
     </script>
 
     <script src="https://rawcdn.githack.com/bbecquet/Leaflet.RotatedMarker/0.2.0/leaflet.rotatedMarker.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@1.6.0/Control.FullScreen.min.js"></script>
     <script src="{{ url_for('static', filename='scripts/next.js') }}" defer></script>
     <script src="{{ url_for('static', filename='scripts/waypoint_script.js') }}" defer></script>
     <script src="{{ url_for('static', filename='scripts/add_waypoints_script.js') }}" defer></script>

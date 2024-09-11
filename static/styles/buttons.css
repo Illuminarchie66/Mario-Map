@@ -1,0 +1,112 @@
+.toggle-button {
+    font-family: 'papermario', sans-serif; /* Use the 'papermario' font */
+    font-size: 18px; /* Adjust the font size as needed */
+    color: white; /* White text color */
+    background-color: red; /* Red button color */
+    border: none; /* Remove default border */
+    padding: 15px 50px; /* Increase padding for a larger button */
+    border-radius: 20px; /* Rounded edges */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6), /* Increased blur and opacity for the outer shadow */
+            inset 0 -4px 8px rgba(255, 255, 255, 0.4);
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-bottom: 10px; /* Space between the buttons */
+    position: relative;
+    overflow: hidden;
+    display: flex; /* Ensure the image and text are aligned */
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center the content horizontally */
+}
+
+/* Button hover effect */
+.toggle-button:hover {
+    background-color: darkred; /* Slightly darker red on hover */
+}
+
+/* Positioning the toggle buttons */
+#buttons-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;/* Align the buttons to the right */
+}
+
+/* Style the images inside the buttons */
+.button-icon {
+    position: absolute; /* Position image absolutely within button */
+    left: 10px; /* Distance from the left edge of the button */
+    top: 50%; /* Vertically center the image */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+    height: 50px; /* Set the height of the icon */
+    width: 50px; /* Set the width of the icon */
+}
+
+.button-text {
+    margin-left: 20px;
+    display: inline-block; /* Ensure text wraps correctly */
+}
+
+@media (max-width: 1024px) {
+    #buttons-container {
+        flex-direction: row; /* Align buttons horizontally */
+        bottom: 10px; /* Move buttons closer to the bottom */
+        right: 50%;
+        transform: translateX(50%); /* Center the buttons at the bottom */
+    }
+
+    .toggle-button {
+        padding: 10px; /* Reduce padding to make buttons square */
+        width: 60px; /* Set a fixed width for square buttons */
+        height: 60px; /* Set a fixed height for square buttons */
+        border-radius: 10px; /* Slightly round the corners */
+        margin-right: 10px;
+    }
+
+    .button-icon {
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center the icon in the button */
+        width: 40px;
+        height: 40px; /* Adjust the icon size for smaller buttons */
+    }
+
+    .button-text {
+        display: none; /* Hide the text on small screens */
+    }
+}
+
+
+
+
+.addon-button-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.addon-square-button {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+.addon-square-button img {
+    width: 45px;
+    height: 45px;
+}
+
+.addon-square-button:focus {
+    outline: none;
+}
+
+.addon-square-button:hover {
+    background-color: darkred;
+}
