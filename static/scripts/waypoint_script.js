@@ -234,7 +234,6 @@ function addMarker2({x, y, name, game, course, description, iconpic, images, tag
 
 function addArrow({x, y, name, imagesrc, angle}) {
     var marker = L.marker([y, x], {icon: rotatedIcon, rotationAngle: angle}).addTo(map);
-    // Define the popup content
     var popupContent = `
         <div class="popup-container">
             <div class="image-container">
