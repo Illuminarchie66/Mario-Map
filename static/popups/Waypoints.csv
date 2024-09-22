@@ -90,7 +90,7 @@ x,y,icon,name,game,course,description,src,tag
 92.1,-149.45,flower,Toad Town Station,Paper Mario 64,Toad Town,A train station which is an end of the Dry Dry Railroad. Here Mario can get the K64 to Mt. Rugged.,PMStation.webp,location
 100.4,-149.43,vehicle,K64,Paper Mario 64,,A steam train that runs along the Dry Dry Railroad. The train can be ridden for free!,K64.webp,vehicle
 86.21,-159.9,red,Mushroom Way,Super Mario RPG,,A short path extending from Mario's pad to Toad Town.,RPGWay.webp,area
-69.54,-166.828,mario,Mario's Pad,Super Mario RPG,,"This is the modest cosy home of the Mario Brothers, a short walk away from Toad Town, with Peach's Castle in the distance.",Mariospad.jpg,landmark
+69.54,-166.828,mario,Mario's Pad,Super Mario RPG,,"This is the modest cosy home of the Mario Brothers, a short walk away from Toad Town, with Peach's Castle in the distance.",MariosPad.jpg,landmark
 91.25,-161.89,flower,Broque Madame's House,Mario & Luigi: Bowser's Inside Story,Blubble Lake,This is the house that Broque Madame resides in. Her house is the brawl attack challenge mode for Blubble Lake.,BISBroque.webp,location
 121.1,-171.8,red,Blubble Lake,Mario & Luigi: Bowser's Inside Story,,"A large rocky lake South of Toad Town. In the lake lies the Tower of Yikk, a large autonomous mechanical tower.",BISBlubble.webp,area
 133.4,-145.13,red,Forever Forest,Paper Mario 64,,"A dark purple wood near Toad Town, where you can get lost for days. Gloomy trees seem to go on forever in this place.",PMForever.webp,area

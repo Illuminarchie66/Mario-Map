@@ -238,7 +238,7 @@ function addArrow({x, y, name, imagesrc, angle}) {
     var popupContent = `
         <div class="popup-container">
             <div class="image-container">
-                <img src="static/popups/images/${imagesrc}" alt="Image">
+                <img src="https://mario-map.s3.eu-west-2.amazonaws.com/popups/${imagesrc}" alt="Image">
                 <div class="fade-overlay"></div>
             </div>
             <div class="text-container">
