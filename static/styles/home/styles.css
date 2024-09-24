@@ -187,8 +187,111 @@ footer {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* .sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-} */
+@media (max-width: 1024px) {
+    header img {
+        width: 80%; /* Adjust width to make the image large */
+        height: auto;
+    }
+
+    #intro {
+        width: 80%;
+    }
+
+    #intro p {
+        font-size: 18px;
+    }
+
+    .toggle-button {
+        font-size: 14px;
+        width: 160px;
+    }
+
+    .button-icon {
+        height: 40px;
+        width: 40px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    header img {
+        width: 90%; /* Adjust width to make the image large */
+        height: auto;
+    }
+
+    #intro {
+        width: 85%;
+    }
+
+    #intro p {
+        font-size: 15px;
+    }
+
+    .button-text {
+        display: none; /* Hide the text on small screens */
+    }
+
+    .toggle-button {
+        padding: 10px;
+        width: 60px;
+        height: 60px; 
+        border-radius: 10px; 
+        margin-right: 10px;
+    }
+
+    #buttons-container {
+        top: calc(82.5%);  
+    }
+
+    footer {
+        padding: 4px 30px;
+        font-size: 12px;
+    }
+    
+}
+
+@media (max-width: 425px) {
+
+    header img {
+        width: 100%; 
+        height: auto;
+    }
+
+    #intro {
+        width: 90%;
+        padding: 5px;
+    }
+
+    #intro p {
+        font-size: 12px;
+    }
+
+    #map {
+        width: 100%;
+        height: calc(100vh - 60px);
+        margin: 0px;
+    }
+
+    .toggle-button {
+        padding: 5px;
+        width: 45px;
+        height: 45px; 
+        border-radius: 10px; 
+        margin-right: 5px;
+    }
+
+    .button-icon {
+        height: 35px;
+        width: 35px;
+    }
+
+    #buttons-container {
+        top: calc(87.5%);  
+    }
+
+    footer {
+        padding: 4px 10px;
+        font-size: 9px;
+    }
+}
