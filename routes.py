@@ -16,3 +16,7 @@ arrows_json = arrows.to_json(orient='records')
 @mario_map.route('/')
 def home():
     return render_template('mario_map.html', waypoints=waypoints_json, arrows=arrows_json)
+
+@mario_map.route('/map')
+def map():
+    return render_template('map.html', waypoints=waypoints_json, arrows=arrows_json)

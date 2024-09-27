@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Map Project</title>
+
+    <!-- Basic Open Graph tags -->
+    <meta property="og:title" content="Mario Map Project" />
+    <meta property="og:description" content="An interactive map of the Mario Universe!" />
+    <meta property="og:image" content="https://mario-map.s3.eu-west-2.amazonaws.com/globe.png" />
+    <meta property="og:url" content="https://www.archie-harrodine.com/mariomap/" />
+
+    <link rel="stylesheet" href="{{ url_for('mario_map.static', filename='styles/home/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('mario_map.static', filename='styles/map/popups.css') }}">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@1.6.0/Control.FullScreen.min.css" />
+
+</head>
+<body>
+
+    <div class="background-blur"></div>
+
+    <div id="main">
+
+    <div id="map-container">
+        <div class='custom-popup' id="map"></div>
+
+        <div id="buttons-container">
+            <div class="button-row">
+                <button class="toggle-button" onclick="toggleWaypoints('area')">
+                    <img src="static/images/emblems/mushroom.svg" alt="Mushroom Icon" class="button-icon">
+                    <span class="button-text">Areas</span>
+                </button>
+    
+                <button class="toggle-button" onclick="toggleWaypoints('location')">
+                    <img src="static/images/emblems/flower.svg" alt="Flower Icon" class="button-icon">
+                    <span class="button-text">Locations</span>
+                </button>
+    
+                <button class="toggle-button" onclick="toggleWaypoints('landmark')">
+                    <img src="static/images/emblems/star.svg" alt="Star Icon" class="button-icon">
+                    <span class="button-text">Landmarks</span>
+                </button>
+    
+                <button class="toggle-button" onclick="toggleWaypoints('arrow')">
+                    <img src="static/images/emblems/arrow.svg" alt="Arrow Icon" class="button-icon">
+                    <span class="button-text">Arrows</span>
+                </button>
+    
+                <button class="toggle-button" onclick="toggleWaypoints('vehicle')">
+                    <img src="static/images/emblems/vehicle.png" alt="Vehicle Icon" class="button-icon">
+                    <span class="button-text">Vehicles</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <footer>
+        <p>Archie Harrodine and the Mario Map Project are not affiliated with or endorsed by Nintendo. All related assets are property of Nintendo or their respective owners. The Mario Map Project is a project that is strictly for free and anything sold for monetary gain is not endorsed by us.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+
+    <script src="https://unpkg.com/leaflet-virtual-grid@1.0.7/dist/virtual-grid.js"></script>
+
+    <script>
+        var waypointData = {{ waypoints | safe }};
+        var arrowData = {{ arrows | safe }};
+    </script>
+
+    <script src="https://rawcdn.githack.com/bbecquet/Leaflet.RotatedMarker/0.2.0/leaflet.rotatedMarker.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@1.6.0/Control.FullScreen.min.js"></script>
+    <script src="{{ url_for('mario_map.static', filename='scripts/next.js') }}" defer></script>
+    <script src="{{ url_for('mario_map.static', filename='scripts/waypoint_script.js') }}" defer></script>
+    <script src="{{ url_for('mario_map.static', filename='scripts/add_waypoints_script.js') }}" defer></script>
+</body>
+</html>
